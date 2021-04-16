@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B208AF22629985300063E67 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B208AF12629985300063E67 /* BookRow.swift */; };
 		0BDCE9E426298DD000AD514B /* BooksShop_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCE9E326298DD000AD514B /* BooksShop_iOSApp.swift */; };
 		0BDCE9E626298DD000AD514B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCE9E526298DD000AD514B /* ContentView.swift */; };
 		0BDCE9E826298DD400AD514B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDCE9E726298DD400AD514B /* Assets.xcassets */; };
 		0BDCE9EB26298DD400AD514B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDCE9EA26298DD400AD514B /* Preview Assets.xcassets */; };
+		0BDCE9FD26298FF000AD514B /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCE9FC26298FF000AD514B /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B208AF12629985300063E67 /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
 		0BDCE9E026298DD000AD514B /* BooksShop-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BooksShop-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDCE9E326298DD000AD514B /* BooksShop_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksShop_iOSApp.swift; sourceTree = "<group>"; };
 		0BDCE9E526298DD000AD514B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BDCE9E726298DD400AD514B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BDCE9EA26298DD400AD514B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BDCE9EC26298DD400AD514B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BDCE9FC26298FF000AD514B /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 		0BDCE9E226298DD000AD514B /* BooksShop-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0BDCE9F926298FC700AD514B /* Model */,
+				0BDCE9FA26298FCF00AD514B /* View */,
 				0BDCE9E326298DD000AD514B /* BooksShop_iOSApp.swift */,
-				0BDCE9E526298DD000AD514B /* ContentView.swift */,
 				0BDCE9E726298DD400AD514B /* Assets.xcassets */,
 				0BDCE9EC26298DD400AD514B /* Info.plist */,
 				0BDCE9E926298DD400AD514B /* Preview Content */,
@@ -67,6 +72,23 @@
 				0BDCE9EA26298DD400AD514B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BDCE9F926298FC700AD514B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BDCE9FC26298FF000AD514B /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BDCE9FA26298FCF00AD514B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BDCE9E526298DD000AD514B /* ContentView.swift */,
+				0B208AF12629985300063E67 /* BookRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			files = (
 				0BDCE9E626298DD000AD514B /* ContentView.swift in Sources */,
 				0BDCE9E426298DD000AD514B /* BooksShop_iOSApp.swift in Sources */,
+				0BDCE9FD26298FF000AD514B /* Book.swift in Sources */,
+				0B208AF22629985300063E67 /* BookRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
