@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import Combine
 
-class Book: Identifiable {
+class Book: ObservableObject {
     init(title: String, image: UIImage, author: String, description: String, price: Double) {
         self.title = title
         self.image = image
@@ -17,6 +18,8 @@ class Book: Identifiable {
     }
     
     let id: String = UUID().uuidString
+    let objectWillChange = PassthroughSubject<Void, Never>()
+    
     let title: String
     let image: UIImage
     let author: String
@@ -24,10 +27,17 @@ class Book: Identifiable {
     let price: Double
     
     var priceText: String {
-        String(format: "%.2f", price)
+        if selected {
+            return "Selected"
+        }
+        return String(format: "%.2f", price) + " €"
     }
     
-    var selected: Bool = false
+    var selected: Bool = false {
+        willSet {
+            objectWillChange.send()
+        }
+    }
 }
 
 #if DEBUG

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B208AF22629985300063E67 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B208AF12629985300063E67 /* BookRow.swift */; };
+		0B208AF52629C40A00063E67 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B208AF42629C40A00063E67 /* Cart.swift */; };
 		0BDCE9E426298DD000AD514B /* BooksShop_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCE9E326298DD000AD514B /* BooksShop_iOSApp.swift */; };
 		0BDCE9E626298DD000AD514B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCE9E526298DD000AD514B /* ContentView.swift */; };
 		0BDCE9E826298DD400AD514B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDCE9E726298DD400AD514B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0B208AF12629985300063E67 /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
+		0B208AF42629C40A00063E67 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		0BDCE9E026298DD000AD514B /* BooksShop-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BooksShop-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDCE9E326298DD000AD514B /* BooksShop_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksShop_iOSApp.swift; sourceTree = "<group>"; };
 		0BDCE9E526298DD000AD514B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDCE9FC26298FF000AD514B /* Book.swift */,
+				0B208AF42629C40A00063E67 /* Cart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				0BDCE9E626298DD000AD514B /* ContentView.swift in Sources */,
 				0BDCE9E426298DD000AD514B /* BooksShop_iOSApp.swift in Sources */,
+				0B208AF52629C40A00063E67 /* Cart.swift in Sources */,
 				0BDCE9FD26298FF000AD514B /* Book.swift in Sources */,
 				0B208AF22629985300063E67 /* BookRow.swift in Sources */,
 			);

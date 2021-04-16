@@ -9,7 +9,8 @@ import SwiftUI
 
 struct BookRow: View {
     
-    let book: Book
+    @EnvironmentObject var cart: Cart
+    @ObservedObject var book: Book
     
     var body: some View {
         HStack {
@@ -31,13 +32,18 @@ struct BookRow: View {
             Spacer()
             
             Button(action: {
-                
+                self.book.selected.toggle()
+                if self.book.selected {
+                    self.cart.add(book: self.book)
+                } else {
+                    self.cart.remove(book: self.book)
+                }
             }) {
                 Text("\(book.priceText)")
                     .accentColor(.white)
                     .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
             }
-            .background(Color.black)
+            .background(book.selected ? Color.green : Color.black)
             .cornerRadius(100)
         }
     }
@@ -46,5 +52,6 @@ struct BookRow: View {
 struct BookRow_Previews: PreviewProvider {
     static var previews: some View {
         BookRow(book: Book.testObject()[3])
+            . environmentObject(Cart())
     }
 }
