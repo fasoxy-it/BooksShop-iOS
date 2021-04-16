@@ -18,6 +18,8 @@ struct ContentView: View {
             ScrollView {
                 HStack {
                     Text("Total")
+                        .font(.title)
+                        .fontWeight(.bold)
                     Spacer()
                     Text(cart.totalPriceText)
                         .font(.title)
